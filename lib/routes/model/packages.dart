@@ -7,6 +7,7 @@ class Packages {
   final String type;
   final String title;
   final String content;
+  final int media;
 
   Packages(
       {this.id,
@@ -16,13 +17,15 @@ class Packages {
       this.status,
       this.type,
       this.title,
-      this.content});
+      this.content,
+      this.media});
 
   factory Packages.fromJson(Map<String, dynamic> json) {
     return Packages(
       id: json['id'],
       title: json['title']['rendered'],
-
+      media: json['featured_media'],
+      content: json['description']
     );
 
   }

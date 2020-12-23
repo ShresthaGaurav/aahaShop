@@ -3,6 +3,7 @@ import 'package:aahashop/routes/frontView/categ/Catelist.dart';
 import 'package:aahashop/routes/frontView/hotpick/HotPIck.dart';
 import 'package:aahashop/routes/frontView/imageSlider/ImageSlider.dart';
 import 'package:aahashop/routes/seaerch/search.dart';
+import 'package:aahashop/routes/widgets/MyImage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -24,7 +25,6 @@ class _HomeState extends State<Home> {
           ImageSloders(),
           CateList(),
           HotPick(),
-
         ],
       ),
     );
